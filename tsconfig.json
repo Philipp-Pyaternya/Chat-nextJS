@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "baseUrl": ".",
+        "paths": {
+            "server/*": ["server/*"],
+            "componetns/*": ["componetns/*"],
+            "services/*": ["server/services/*"],
+            "models/*": ["server/models/*"],
+            "controllers/*": ["server/controllers/*"]
+        },
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": false,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "incremental": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        "server/di/index.js",
+        "server/models/index.js",
+        "src/node_modules/clientContainer.ts"
+    ],
+    "exclude": ["node_modules"]
+}
